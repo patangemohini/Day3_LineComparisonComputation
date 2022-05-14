@@ -22,10 +22,13 @@ public class LineComparison {
         y2 = scanner.nextInt();
         double length2 = Math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
         System.out.println("length = " + length2);
-        if (length1 == length2) {
-            System.out.println("length of lines are equal");
+
+        if (length1 > length2) {
+            System.out.println("Length of line1 is greater than Length of line2");
+        } else if (length1 < length2) {
+            System.out.println("Length of line1 is less than Length of line2");
         } else {
-            System.out.println("length of lines are not equal");
+            System.out.println("Length of line1 is equal to Length of line2");
         }
     }
 }
