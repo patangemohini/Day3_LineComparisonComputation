@@ -1,5 +1,6 @@
 package linecomparison;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class LineComparison {
@@ -22,7 +23,7 @@ public class LineComparison {
         y2 = scanner.nextInt();
         double length2 = Math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
         System.out.println("length = " + length2);
-        if (length1 == length2) {
+        if (Objects.equals(length1, length2)) {
             System.out.println("length of lines are equal");
         } else {
             System.out.println("length of lines are not equal");
